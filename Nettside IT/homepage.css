@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto:wght@500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    border: 1px solid white;
+    border-right: none;
+    width: 100%;
+    /* height: 165rem; */
+    min-height: fit-content;
+    
+}
+
+
+
+.disappear {
+    animation: vanish 1s forwards
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+/* Header */
+
+
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    position: sticky;
+	top: 0;
+    z-index: 9999;
+    border-bottom: 1px solid red;
+    border-radius: 15px;
+
+    
+   
+}
+
+
+
+#navBar {
+    margin-right: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    font-size: 25px;
+}
+ .navLink {
+    text-decoration: none;
+    color: red;
+    font-family:"DotGothic16", sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+} 
+
+#logoDiv, #logo{
+    width: 30vh;
+    margin-left: 20vh;
+    
+}
+
+
+/* Hentet fra nettet */
+
+.navLink {
+    text-decoration: none;
+  }
+  
+  .navLink:hover {
+    text-decoration: none;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .navLink:after {
+    border-radius: 1em;
+    border-top: .1em solid red;
+    content: "";
+    position: absolute;
+      right: 100%;
+      top: 100%;
+      left: 0;
+    transition: right 1s cubic-bezier(0,.5,1,1);
+  }
+  
+  .navLink:hover:after {
+    right: 0;
+  }
+/* Hentet fra nettet */ 
+
+/* Header */
+
+/* Main content */
+
+#bg-Img {
+    width: 100%;
+    background-image: url("kendrickImg.jpg");
+
+    /* Set a specific height */
+    min-height: 100vh;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#imgText {
+    color: white;
+    width: 100%;
+    font-family: "DotGothic16";
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 5vh;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+   
+#imgText  {
+    width: 50%;
+    font-size: 3rem;
+    margin-bottom: 10vh;
+}
+
+#kendrickIntro {
+    
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    width: 100%;
+}
+
+/* .album {
+    width: 200px;
+}
+
+.album:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+} */
+
+.song{
+    width: 30vh;
+    transition: 0.5s;
+}
+
+
+
+#songShowcase > a > img:hover {
+    
+    transition: 0.51s;
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#songShowcase  {
+    display: grid;
+    
+    
+    grid-template-columns: repeat(4, 1fr);
+    
+    justify-content: center; 
+    
+    /* gap: 20rem 5rem ; */
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    gap: 5% 
+}
+
+
+/* #img1 {
+grid-area: r;
+}
+
+#img2 {
+    grid-area: l;
+    
+}
+
+ #Saviour {
+    grid-area: s;
+}
+
+#PRIDE {
+    grid-area: p;
+}
+
+#UnitedinGrief {
+    grid-area: u;
+}
+
+#Alright {
+    grid-area: a;
+}
+
+#SingAboutMe {
+    grid-area: sa;
+}
+
+#familyTies{
+    grid-area: f;
+}
+
+#recipe {
+    grid-area: re;
+}
+
+#ELEMENT {
+    grid-area: e
+}  */
+
+/* Main content */
+
+/* footer */
+
+footer {
+    border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;
+    padding: 5vh
+}
+
+
+#footerLogo > a > img {
+    width: 80%
+}
+
+
+#contact, #kendrickInfo > h1 {
+    color: white;
+}
+
+
+
+#info {
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    
+}
+
+ul > h1 {
+    font-family: "DotGothic16";
+    letter-spacing: 1px;
+}
+
+.footerLink {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    width: fit-content;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.5s;
+}
+
+
+  
+  .footerLink:after {
+    border-radius: 1em;
+    border-top: .1em solid red;
+    content: "";
+    position: absolute;
+      right: 100%;
+      top: 20px;
+      left: 0;
+    transition: right 0.5s cubic-bezier(0.1,.5,1,1);
+  }
+
+  .footerLink:hover{
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .footerLink:hover:after {
+    right: 0;
+  }
+
+
+/* footer  */
+
+#loader {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    z-index: 999999999;
+}
+
+#loader > img {
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+
+
+
+@media (max-width: 1200px){
+    .song{
+        width: 30vh;
+        transition: 0.5s;
+    }
+    
+    
+    
+    #songShowcase  {
+        display: grid;
+        
+        
+        grid-template-columns: repeat(2, 1fr);
+        
+        justify-content: center; 
+        
+        /* gap: 20rem 5rem ; */
+        margin-top: 8rem;
+        margin-bottom: 6rem;
+        gap: 5% 
+    }
+
+    header {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        border-bottom: 1px solid red;
+        border-radius: 15px;
+        height: 10rem;
+    
+        
+       
+    }
+    
+    
+    footer {
+      margin-top: 5rem;
+
+    }
+    #navBar {
+       /* display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       gap: 3rem; */
+       position: relative;
+       gap: 2rem;
+       
+       left:24%;
+       transform: translate(-50%, -50%);
+    
+    }
+     .navLink {
+        text-decoration: none;
+        color: red;
+        font-family:"DotGothic16", sans-serif;
+        letter-spacing: 2px;
+        font-weight: bold;
+    } 
+    
+     #logo{
+        width: 14rem;
+        position: relative;
+        gap: 2rem;
+        top: 40%;
+        left:-50%;
+        transform: translate(-50%, -50%);
+        
+        
+    }
+
+    #footerLogo{
+       display: none;
+    }
+    
+    body {
+        overflow-x: hidden;
+        height: fit-content;
+    }
+    
+    /* Hentet fra nettet */
+    
+    .navLink {
+        text-decoration: none;
+      }
+      
+      .navLink:hover {
+        text-decoration: none;
+      }
+      
+      .navLink {
+        text-decoration: none;
+        position: relative;
+      }
+      
+      .navLink:after {
+        border-radius: 1em;
+        border-top: .1em solid red;
+        content: "";
+        position: absolute;
+          right: 100%;
+          top: 100%;
+          left: 0;
+        transition: right 1s cubic-bezier(0,.5,1,1);
+      }
+      
+      .navLink:hover:after {
+        right: 0;
+      }
+
+      #imgText {
+        font-size: 2rem;
+        
+      }
+}
